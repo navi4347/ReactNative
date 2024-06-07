@@ -1,11 +1,13 @@
 import React, { useRef, useEffect } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 import LottieView from 'lottie-react-native';
+import Name from './Name';
 
 export default function App() {
   const animation = useRef(null);
-
- 
+  useEffect(() => {
+    
+  }, []);
 
   return (
     <View style={styles.container}>
@@ -16,6 +18,9 @@ export default function App() {
         autoPlay
         loop
       />
+      <View>
+        <Name />
+      </View>
     </View>
   );
 }
@@ -26,6 +31,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+
   lottie: {
     width: 200,
     height: 200,

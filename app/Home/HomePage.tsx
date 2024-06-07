@@ -1,12 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-
+import Weather from '../Pages/Weather'
+import Temperature from '../Pages/Temperature'
 const HomePage = () => {
   return (
-    <View style={styles.home}>
-      <Text style={styles.text}>Home Screen</Text>
+    <View>
+      <Weather />
+      <Temperature />
     </View>
-  )
+   
+  ) 
 }
 
 export default HomePage

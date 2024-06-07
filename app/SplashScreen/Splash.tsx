@@ -8,9 +8,7 @@ const Splash = () => {
     'Sacramento': require('../assets/fonts/Sacramento.ttf'),
   });
 
-  const onPressTitle = () => {
-    setTitleText("Bird's Nest [pressed]");
-  };
+ 
   if (!fontsLoaded && !fontError) {
     return null;
   }

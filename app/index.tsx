@@ -9,8 +9,8 @@ const Index = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      router.push('/Home/HomePage');
-    }, 3050); 
+      router.push('/Navigation/BottomNavigation');
+    }, 2800 ); 
     return () => clearTimeout(timer);
   }, [router]);
 

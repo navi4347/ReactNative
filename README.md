@@ -54,3 +54,11 @@ npx expo start
 npm install lottie-react-native @lottiefiles/react-lottie-player
 
 npm i @lottiefiles/react-lottie-player
+
+npm install @react-navigation/native 
+npm install react-native-paper
+npm install react-native-vector-icons
+npm install react-native-safe-area-context
+npm install @react-navigation/material-bottom-tabs
+npm install @react-navigation/bottom-tabs
+npm install @react-navigation/stack
