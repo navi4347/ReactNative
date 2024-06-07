@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const locationzone = () => {
+const GamePage = () => {
   return (
     <View>
-      <Text>locationzone</Text>
+      <Text>GamePage</Text>
     </View>
   )
 }
 
-export default locationzone
+export default GamePage
 
 const styles = StyleSheet.create({})

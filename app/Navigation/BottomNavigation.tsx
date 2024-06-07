@@ -3,12 +3,10 @@ import { StyleSheet, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useFocusEffect } from '@react-navigation/native';
 import HomePage from '../Home/HomePage';
-import SettingPage from '../Home/SettingPage';
+import SettingPage from '../Home/GamePage';
 import TopStatusBar from '../Components/TopStatusBar';
 import TopAppBar from '../Components/TopAppBar';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
-
 
 
 const Tab = createBottomTabNavigator();
@@ -30,14 +28,17 @@ const BottomNavigation = () => {
 
                     ),
         }} />
+        
         <Tab.Screen name="Settings" component={SettingPage} 
         options={{
           tabBarIcon: ({ color, size }) => (
-            <SimpleLineIcons name="settings" size={size} color={color} />
+            <SimpleLineIcons name="game-controller" size={size} color={color} />
 
           ),
 }} />
+
       </Tab.Navigator>
+
     </View>
   );
 }
